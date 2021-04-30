@@ -1,0 +1,22 @@
+.content {
+  &__title {
+    margin: 0;
+    padding-top: 2.5rem; //40px
+
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  &__text {
+    margin: 1rem 0 1.375rem 0;
+
+    color: $desaturatedDarkBlue;
+    font-size: $body-font;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: -0.3px;
+  }
+  &__profile {
+    padding-bottom: 1.25rem;
+    border-radius: 0px 0px 5px 5px;
+  }
+}
