@@ -37,8 +37,47 @@ a:hover {
 .pd-lr {
   padding-left: 2.125rem; //34px;
   padding-right: 2.125rem; //34px;
+  @include breakpoint-up(medium) {
+    padding-left: 2.5rem; //40px;
+    padding-right: 2.5rem; //40px;
+  }
 }
 
+//animation
+.none {
+  display: none;
+  opacity: 0;
+}
+
+.appear {
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+  display: flex;
+}
+
+.disappear {
+  animation: fade-out 1s;
+  animation-fill-mode: forwards;
+}
+
+//Keyframes
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 //Visibility
 .hide-for-mobile {
   @include breakpoint-down(medium) {
@@ -49,17 +88,6 @@ a:hover {
 .hide-for-desktop {
   @include breakpoint-up(large) {
     display: none;
-  }
-}
-
-//Keyframes
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: opacity linear;
   }
 }
 

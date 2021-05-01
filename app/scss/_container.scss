@@ -7,10 +7,26 @@
     height: 12.5rem; //200px;
     background-image: url("../images/drawers.jpg");
     background-size: 100%;
-    border-radius: 5px 5px 0px 0px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
   }
   &__content {
     background-color: white;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+@include breakpoint-up(medium) {
+  .container {
+    width: 45.75rem; // 732px
+    display: flex;
+    flex-flow: row;
+    &__image {
+      width: 100%;
+      height: 100%;
+      background-size: 125% 100%;
+      background-position: left;
+      border-radius: 10px 0px 0px 10px;
+    }
   }
 }

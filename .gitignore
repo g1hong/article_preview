@@ -23,4 +23,5 @@ _site/
 
 # Avoid readmes
 README copy.md
+script_old.js
 README-template.md
