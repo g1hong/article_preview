@@ -1,0 +1,111 @@
+.share-items {
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $veryDarkGrayishBlue;
+  padding: 0.875rem 2.125rem;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+
+  .share-name {
+    flex: 33%;
+    font-size: $body-font;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: $grayishBlue;
+  }
+
+  ul.logos {
+    flex: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-inline-start: 0;
+    li {
+      display: inline-block;
+    }
+  }
+
+  .share {
+    display: flex;
+    align-items: center;
+    flex: 33%;
+    justify-content: flex-end;
+
+    a {
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+      border-radius: 50%;
+      background-color: $desaturatedDarkBlue;
+      svg path {
+        fill: $lightGrayishBlue;
+      }
+    }
+  }
+}
+//desktop toggle show bubble
+.desktop-share {
+  position: absolute;
+  top: 110px;
+  right: -61px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $veryDarkGrayishBlue;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  display: none;
+
+  ul li {
+    display: inline-block;
+  }
+
+  .share-name {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: $desaturatedDarkBlue;
+    flex: 40%;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    flex: 30%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: $veryDarkGrayishBlue;
+    top: 45px;
+    right: 105px;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+  }
+}
+
+.show {
+  display: flex;
+  transition: all 1s ease-in;
+}
+
+// @media only screen and (min-width: 768px) {
+//   .component {
+//     flex-direction: row;
+//     max-width: 700px;
+
+//     .image img {
+//       height: 100%;
+//       border-top-left-radius: 10px;
+//       border-bottom-left-radius: 10px;
+//       border-top-right-radius: 0;
+//     }
+//   }
+// }

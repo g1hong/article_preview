@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,46 +11,77 @@
   <link rel="stylesheet" href="./dist/style.css">
 
   <title>Frontend Mentor | Article preview component</title>
-
 </head>
 <body>
-  <article class="container">
-    <div class="container__image">
-      <!-- <img src="./images/drawers.jpg" alt="drawers"> -->
-    </div>
-    <section class="container__content content">
-      <h5 class="content__title pd-lr">
-        Shift the overall look and feel by adding these wonderful 
-        touches to furniture in your home
-      </h5>
-      <div class="content__text pd-lr">
-        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-      </div>
-      <div class="content__profile pd-lr profile">
-        <div class="profile__image">
-          <img src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+  <main>
+    <section class="container">
+      <div class="component">
+        <div class="image">
+          <!-- <img src="./images/drawers.jpg" alt=""> -->
         </div>
-        <div class="profile__name">Michelle Appleton</div>
-        <div class="profile__date">28 Jun 2020</div>
-        
-        <div class="profile__btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+        <div class="content">
+          <h1 class="d-color">
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home</h1>
+          <p class="text l-color">Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.</p>
+          <div class="information">
+            <div class="icon">
+              <img src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+            </div>
+            <div class="info-name">
+              <p class="name d-color">Michelle Appleton</p>
+              <p class="date l-color">28 Jun 2020</p>
+            </div>
+            <div class="share">
+              <a class="share-icon" href="#">
+                <img src="./images/icon-share.svg" alt="icon-share">
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="content__popup none">
-        <div class="popup__share ">
-          <span>share</span>
-          <img src="./images/icon-facebook.svg" alt="icon-facebook">
-          <img src="./images/icon-twitter.svg" alt="icon-twitter">
-          <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+        <div class="share-items">
+          <h2 class="share-name">SHARE</h2>
+          <ul class="logos">
+            <li>
+              <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook Logo"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter Logo"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest Logo"></a>
+            </li>
+          </ul>
+          <div class="share">
+            <a class="share-icon" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="desktop-share">
+          <h2 class="share-name">SHARE</h2>
+          <ul class="logos">
+            <li>
+              <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook Logo"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter Logo"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest Logo"></a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-  </article>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Jiwon Hong</a>.
   </div>
   <script src="./app/js/script.js"></script>
 </body>
+
 </html>
