@@ -16,18 +16,6 @@
     color: $grayishBlue;
   }
 
-  ul.logos {
-    flex: 33%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-inline-start: 0;
-    li {
-      display: inline-block;
-    }
-  }
-
   .share {
     display: flex;
     align-items: center;
@@ -48,12 +36,24 @@
     }
   }
 }
+ul.logos {
+  flex: 33%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-inline-start: 0;
+  li {
+    display: inline-block;
+  }
+}
 //desktop toggle show bubble
 .desktop-share {
+  width: 250px;
+  height: 54px;
   position: absolute;
-  top: 110px;
-  right: -61px;
-  width: 230px;
+  top: 130px;
+  right: -40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,14 +62,11 @@
   border-radius: 10px;
   display: none;
 
-  ul li {
-    display: inline-block;
-  }
-
   .share-name {
+    font-size: $body-font;
     font-weight: 700;
     letter-spacing: 5px;
-    color: $desaturatedDarkBlue;
+    color: $grayishBlue;
     flex: 40%;
   }
 
@@ -83,10 +80,10 @@
     position: absolute;
     content: "";
     background: $veryDarkGrayishBlue;
-    top: 45px;
-    right: 105px;
-    height: 10px;
-    width: 10px;
+    width: 15px;
+    height: 15px;
+    top: 47px;
+    right: 100px;
     transform: rotate(45deg);
   }
 }
@@ -94,6 +91,14 @@
 .show {
   display: flex;
   transition: all 1s ease-in;
+  .share {
+    a {
+      background-color: $desaturatedDarkBlue !important;
+      svg path {
+        fill: $lightGrayishBlue !important;
+      }
+    }
+  }
 }
 
 // @media only screen and (min-width: 768px) {
